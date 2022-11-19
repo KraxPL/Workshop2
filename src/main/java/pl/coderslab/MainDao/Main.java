@@ -40,7 +40,7 @@ public class Main {
                 }
                 if ("delete".equals(choice)) {
                     System.out.println("Podaj id użytkownika, którego chcesz usunąć: ");
-                    int idToDelete = scanner.nextInt();
+                    int idToDelete = Integer.parseInt(scanner.nextLine());
                     userDao.delete(idToDelete);
                 }
                 if ("edit".equals(choice)) {
@@ -51,7 +51,7 @@ public class Main {
                 }
                 if ("listId".equals(choice)) {
                     System.out.println("Podaj id szukanego użytkownika");
-                    int searchedId = scanner.nextInt();
+                    int searchedId = Integer.parseInt(scanner.nextLine());
                     nowy.setId(searchedId);
                     userDao.read(nowy.getId());
                 }
