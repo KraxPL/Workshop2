@@ -4,7 +4,6 @@ import pl.coderslab.entity.User;
 import pl.coderslab.entity.UserDao;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
